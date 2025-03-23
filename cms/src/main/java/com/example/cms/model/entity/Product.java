@@ -55,10 +55,10 @@ public class Product {
     @JoinColumn(name = "retailerId")
     private Retailer retailer;
 
-    @NotEmpty
+    @NotNull
     private Integer quantity;
 
-    public Product(long productId, String name, String brand, Double originalPrice, Double newPrice, Category category, String imageURL, Double averageScore) {
+    public Product(long productId, String name, String brand, Double originalPrice, Double newPrice, Category category, String imageURL, Double averageScore, Integer quantity) {
         this.productId = productId;
         this.name = name;
         this.brand = brand;
@@ -67,6 +67,7 @@ public class Product {
         this.category = category;
         this.imageURL = imageURL;
         this.averageScore = averageScore;
+        this.quantity = quantity;
     }
 
 }

@@ -22,11 +22,11 @@ VALUES
     (2, 'Conditioner'),
     (3, 'Perfume');
 
-INSERT INTO products( productId, name, brand, originalPrice, newPrice, categoryId, retailerId, imageURL, averageScore)
+INSERT INTO products( productId, name, brand, originalPrice, newPrice, categoryId, retailerId, imageURL, averageScore, quantity)
 VALUES
-    (1001, 'Frizz- Free Keratine Smoothing Oil Shampoo', 'OGX', 12.99, 8.49, 1, 'ret-001','https://assets.beauty.shoppersdrugmart.ca/bb-prod-product-image/062600385185/enfr/01/front/400/white.jpg', 4),
-    (1002, 'Curl Define Shampoo', 'Monday Haircare', 9.99, 6.99, 1, 'ret-002', 'https://digital.loblaws.ca/SDM/SDM_840191601262/en/1/840191601262_enfr_01_400.jpeg', 3.4),
-    (1003, 'EverPure Moisture Conditioner', 'L''Oréal Paris', 11.50, 7.25, 2, 'ret-003','https://digital.loblaws.ca/SDM/SDM_071249341254/en/1/0071249341254_enfr_01_400.jpeg', 4.1),
-    (1004, 'Dry & Itchy Leave in Conditioner', 'As I Am', 13.00, 9.00, 2, 'ret-001','https://digital.loblaws.ca/SDM/SDM_858380035323/en/1/858380035323_enfr_01_400.jpeg',2.9),
-    (1005, 'Eilish Eau de Parfum', 'Billie Eilish', 45.00, 30.00, 3, 'ret-002','https://digital.loblaws.ca/SDM/SDM_608940582206/en/1/608940582206_enfr_01_400.jpeg',3.1),
-    (1006, 'Cloud Eau de Parfum Spray', 'Ariana Grande', 60.00, 39.99, 3, 'ret-003','https://digital.loblaws.ca/SDM/SDM_812256023289/en/1/812256023289_enfr_01_400.jpeg', 4.1);
+    (1001, 'Frizz- Free Keratine Smoothing Oil Shampoo', 'OGX', 12.99, 8.49, 1, 'ret-001','https://assets.beauty.shoppersdrugmart.ca/bb-prod-product-image/062600385185/enfr/01/front/400/white.jpg', 4, 50),
+    (1002, 'Curl Define Shampoo', 'Monday Haircare', 9.99, 6.99, 1, 'ret-002', 'https://digital.loblaws.ca/SDM/SDM_840191601262/en/1/840191601262_enfr_01_400.jpeg', 3.4, 100),
+    (1003, 'EverPure Moisture Conditioner', 'L''Oréal Paris', 11.50, 7.25, 2, 'ret-003','https://digital.loblaws.ca/SDM/SDM_071249341254/en/1/0071249341254_enfr_01_400.jpeg', 4.1, 40),
+    (1004, 'Dry & Itchy Leave in Conditioner', 'As I Am', 13.00, 9.00, 2, 'ret-001','https://digital.loblaws.ca/SDM/SDM_858380035323/en/1/858380035323_enfr_01_400.jpeg',2.9, 10),
+    (1005, 'Eilish Eau de Parfum', 'Billie Eilish', 45.00, 30.00, 3, 'ret-002','https://digital.loblaws.ca/SDM/SDM_608940582206/en/1/608940582206_enfr_01_400.jpeg',3.1, 70),
+    (1006, 'Cloud Eau de Parfum Spray', 'Ariana Grande', 60.00, 39.99, 3, 'ret-003','https://digital.loblaws.ca/SDM/SDM_812256023289/en/1/812256023289_enfr_01_400.jpeg', 4.1,25);

@@ -20,5 +20,5 @@ public class ProductDto {
     private String retailerId;
     private String imageURL;
     private Double averageScore;
-
+    private Integer quantity;
 }

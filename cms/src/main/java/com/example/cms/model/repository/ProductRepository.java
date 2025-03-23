@@ -2,6 +2,7 @@ package com.example.cms.model.repository;
 
 import com.example.cms.model.entity.Category;
 import com.example.cms.model.entity.Product;
+import com.example.cms.model.entity.Retailer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -33,4 +34,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             @Param("sortBy") String sortBy
     );
     List<Product> findByCategory(Category category);
+
+    List<Product> findByRetailer(Retailer retailer);
 }

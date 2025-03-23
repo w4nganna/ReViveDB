@@ -1,5 +1,6 @@
 package com.example.cms.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,6 +25,7 @@ public class Category {
 
     // Many-to-One relationship with Product
     @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<Product> products = new ArrayList<>();
 
     public Category( long id, String name)

@@ -43,7 +43,8 @@ public class ShopperController {
                         product.getCategory() != null ? product.getCategory().getCategoryId() : null,
                         product.getRetailer() != null ? product.getRetailer().getId() : null,
                         product.getImageURL(),
-                        product.getAverageScore()
+                        product.getAverageScore(),
+                        product.getQuantity()
                 )) .collect(Collectors.toSet());
     }
 
